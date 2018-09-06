@@ -14,12 +14,12 @@ func replaceAtIndex(in string, r rune, i int) string {
 
 func Funnel(first, second string) bool {
 	for i := 0; i < len(first); i++ {
-		// chr := string(first[i])
+		// chr := string(first[i])  // debug
 		newFirst := replaceAtIndex(first, ' ', i)
 		if newFirst == second {
 			return true
 		}
-		// fmt.Println(chr, newFirst)
+		// fmt.Println(chr, newFirst)  // debug
 	}
 	return false
 }
