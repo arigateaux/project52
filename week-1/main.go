@@ -7,12 +7,15 @@ import (
 )
 
 func main() {
-	fmt.Println(
-		funnel.Funnel("leave", "eave"),     // => true
-		funnel.Funnel("reset", "rest"),     // => true
-		funnel.Funnel("dragoon", "dragon"), // => true
-		funnel.Funnel("eave", "leave"),     // => false
-		funnel.Funnel("sleet", "lets"),     // => false
-		funnel.Funnel("skiff", "ski"),      // => false
-	)
+	// fmt.Println(
+	// 	funnel.Funnel("leave", "eave"),     // => true
+	// 	funnel.Funnel("reset", "rest"),     // => true
+	// 	funnel.Funnel("dragoon", "dragon"), // => true
+	// 	funnel.Funnel("eave", "leave"),     // => false
+	// 	funnel.Funnel("sleet", "lets"),     // => false
+	// 	funnel.Funnel("skiff", "ski"),      // => false
+	// )
+	fmt.Println(funnel.Bonus("dragoon"))
+	fmt.Println(funnel.Bonus("boats"))
+	fmt.Println(funnel.Bonus("affidavit"))
 }
